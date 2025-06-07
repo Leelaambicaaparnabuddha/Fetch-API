@@ -6,7 +6,7 @@ function fetchUsers() {
   userList.innerHTML = '';
   errorDisplay.textContent = '';
 
-  fetch('task7.json')
+  fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
